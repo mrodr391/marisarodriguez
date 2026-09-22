@@ -32,14 +32,6 @@ body {
   object-fit: cover;
   filter: brightness(75%);
 }
-.headshot {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 4px solid var(--gold);
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
 
 .hero-content {
   position: absolute;
@@ -53,6 +45,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.headshot {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid var(--gold);
+  object-fit: cover;
 }
 
 
