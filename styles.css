@@ -17,8 +17,7 @@ body {
   color: var(--forest);
 }
 
-/* Hero */
-/* Full-width banner header */
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
@@ -53,11 +52,26 @@ body {
   border-radius: 50%;
   border: 4px solid var(--gold);
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: var(--gold);
+  color: var(--forest);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
-/* Navbar */
+.btn:hover {
+  background: var(--forest);
+  color: var(--mist);
+}
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: center;
@@ -72,8 +86,7 @@ body {
   font-weight: 500;
 }
 
-/* Sections */
-
+/* SECTIONS */
 .section {
   max-width: 900px;
   margin: 2.5rem auto;
@@ -84,8 +97,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Cards */
-
+/* CARDS */
 .card {
   background: var(--white);
   border-radius: 10px;
@@ -98,8 +110,7 @@ body {
   margin-top: 0;
 }
 
-/* Skills */
-
+/* SKILLS */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -113,8 +124,7 @@ body {
   border-left: 4px solid var(--slate);
 }
 
-/* Footer */
-
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -122,14 +132,14 @@ footer {
   color: var(--mist);
 }
 
-/* Responsive */
-
+/* RESPONSIVE */
 @media (max-width: 800px) {
   .hero {
-    grid-template-columns: 1fr;
+    height: 300px;
   }
 
-  .hero-right {
-    text-align: center;
+  .headshot {
+    width: 110px;
+    height: 110px;
   }
 }
