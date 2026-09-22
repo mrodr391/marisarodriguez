@@ -1,0 +1,149 @@
+:root {
+  --forest: #123524;
+  --mist: #e5dcd0;
+  --slate: #7d8d9c;
+  --gold: #d9b777;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--mist);
+  color: var(--forest);
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem;
+  padding: 3rem 8vw;
+  background: linear-gradient(to right, var(--slate), var(--mist));
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.hero-right {
+  text-align: left;
+}
+
+.headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--gold);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  color: var(--mist);
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--gold);
+  color: var(--forest);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.8rem 1rem;
+  background: var(--forest);
+}
+
+.navbar a {
+  color: var(--mist);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Sections */
+
+.section {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--gold);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Skills */
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin-bottom: 0.6rem;
+  border-left: 4px solid var(--slate);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--forest);
+  color: var(--mist);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+}
